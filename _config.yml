@@ -1,0 +1,76 @@
+# Site settings
+baseurl: ""
+
+# Build settings
+author: Ortexa
+source:      .
+destination: ./_site
+plugins_dir: ./_plugin
+markdown: kramdown
+permalink: /:title
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+  - "*.iml"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+#
+# plugin configuration
+#
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  #- jekyll-redirect-from
+languages: ["fr", "de", "it", "en"]
+
+# Build settings
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Google analytics
+ga_tracking_id: "UA-101337976-1"
+
+#
+# other configuration
+#
+git-hub:
+  username: ortexa
+
+
+linkedin:
+  username: /company-beta/11164702
+
+facebook:
+  username: ortexa
+
+email: contact@ortexa.com
+
+social:
+  name: Ortexa
+  links:
+    - https://github.com/ortexa
+    - https://www.facebook.com/ortexa
+    - https://www.linkedin.com/company-beta/11164702/
+
+contact:
+   form:
+     baseurl: http://contactus.ortexa.com
+
+
+github: [metadata]
