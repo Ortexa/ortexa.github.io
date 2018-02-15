@@ -1,0 +1,81 @@
+---
+layout: page
+permalink: /contact
+
+title: Ortexa - Contact us!
+description: Ortexa Sàrl - Ortexa GmbH - Ortexa Ltd liab. Co - Ortexa Sagl
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Nous Contacter</h1>
+                    <p>Remplissez le formulaire de contact ou envoyé nous un email.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact form start -->
+<section id="contact-form">
+    <div class="container">
+        <div class="row">
+            <form name="form" method="post" action="{{site.contact.form.baseurl}}/contactscript.php">
+                <div class="col-md-6 col-sm-12">
+                    <div class="block">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Nom, Prénom, Raison sociale " name="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Adresse" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Sujet" name="sbjt">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="block">
+                        <div class="form-group-2">
+                            <textarea class="form-control" rows="3" placeholder="Message" name="msg"></textarea>
+                        </div>
+                        <div class="form-group-3">
+                            <input class="form-control" placeholder="Captcha" name="captcha">
+                        </div>
+                        <div class="form-group-3 left">
+                            <img class="form-img" src="{{site.contact.form.baseurl}}/captcha2.php"/>
+                        </div>
+                        <button class="btn btn-default" type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="contact-box" class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="block">
+                    <ul class="address-block">
+                        <li>
+                            <i class="fa fa-envelope-o"></i>Email: contact@mail.com
+                        </li>
+                    </ul>
+
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.linkedin.com/company-beta/11164702/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ortexa"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ortexa/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
