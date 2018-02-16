@@ -1,13 +1,14 @@
 # Site settings
 baseurl: ""
+url: "https://ortexa.com"
 
 # Build settings
-author: Ortexa
 source:      .
 destination: ./_site
 plugins_dir: ./_plugin
 markdown: kramdown
 permalink: /:title
+author: Ortexa
 
 exclude:
   - "/vendor/"
@@ -19,9 +20,9 @@ exclude:
   - "*.iml"
 
 keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
+#  - "CNAME"
+#  - ".git"
+#  - ".gitignore"
 
 #
 # plugin configuration
@@ -29,8 +30,15 @@ keep_files:
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
-  #- jekyll-redirect-from
-languages: ["fr", "de", "it", "en"]
+  - jekyll-redirect-from
+
+collections:
+  pages:
+    output: true
+
+#using Jekyll in safe mode to mimic GitHub Pages
+whitelist:
+  - jekyll-redirect-from
 
 # Build settings
 # Jekyll 3 now only supports Kramdown for Markdown
@@ -51,7 +59,6 @@ ga_tracking_id: "UA-101337976-1"
 #
 git-hub:
   username: ortexa
-
 
 linkedin:
   username: /company-beta/11164702

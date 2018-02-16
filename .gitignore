@@ -1,6 +1,5 @@
-_site
-*.*.swp
-ortexa.github.io.iml
 .idea
+*.swp
+*.iml
 .cmd
-
+_site
